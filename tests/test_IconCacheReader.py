@@ -21,6 +21,7 @@ import struct
 import sys
 import tempfile
 import unittest
+from typing import List
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 import IconCacheReader as tool
@@ -605,7 +606,7 @@ class TestUTF16Scanner(unittest.TestCase):
 
 class TestOutputWriters(unittest.TestCase):
 
-    def _sample(self) -> list[tool.ResultRow]:
+    def _sample(self) -> List[tool.ResultRow]:
         return [tool.ResultRow(
             user="Alice", iconcache_file="IconCache.db",
             binary_path=r"C:\Windows\notepad.exe",
