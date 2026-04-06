@@ -277,6 +277,7 @@ git push origin v2.1.0
 
 This tool's binary format parser is based on:
 
+- **Jan Collie** — [The windows IconCache.db: A resource for forensic artifacts from USB connectable devices](https://www.sciencedirect.com/science/article/abs/pii/S1742287613000078)
 - **Phill Moore & Yogesh Khatri** — [Examining the IconCache database](https://thinkdfir.com/2025/12/28/examining-the-iconcache-database/) (ThinkDFIR, 2025-12-28)
 - **010 Editor template `IconCache.bt`** — Moore & Khatri, v1.0, 2025-11-07
   ([download](https://www.sweetscape.com/010editor/repository/templates/file_info.php?file=IconCache.bt))
