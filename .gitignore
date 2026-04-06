@@ -1,0 +1,35 @@
+# Build artifacts
+dist/
+build/
+*.spec.bak
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# PyInstaller working directories
+*.egg-info/
+.eggs/
+
+# Test / coverage output
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Output files from tool runs
+results.csv
+results.json
+*.csv
+*.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
