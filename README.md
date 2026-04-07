@@ -18,13 +18,11 @@ dependencies.
 
 - [What is IconCache.db?](#what-is-iconcachedb)
 - [Forensic Value](#forensic-value)
-- [Features](#features)
 - [Download](#download)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
 - [Output](#output)
 - [Building from Source / EXE](#building-from-source--exe)
-- [Folder Structure](#folder-structure)
 - [Research Credit](#research-credit)
 - [Contributing](#contributing)
 - [License](#license)
