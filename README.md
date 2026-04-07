@@ -71,23 +71,6 @@ and **Amcache** (SHA1, first-run) for a complete picture.
 
 ---
 
-## Features
-
-- Parses `IconCache.db` v0x0507 (Win10/11) and v0x0506 (older) correctly
-- UTF-16LE fallback scanner for corrupt or partially-damaged files
-- Device path normalisation (`\Device\HarddiskVolumeN\...` → `C:\...`)
-- Correct username inference even when image is mounted inside analyst's own profile path
-- Optional **Amcache.hve** enrichment (SHA1, file size, first-run, product name)
-  - Supports both modern `InventoryApplicationFile` and legacy `File\{VolumeGUID}` layouts
-- FULL_PATH → BASENAME → NONE join with confidence flagging
-- Deduplication with match-type priority
-- ASCII table, JSON, and CSV (UTF-8 BOM for Excel) output
-- Windows console UnicodeEncodeError protection
-- **Zero external dependencies** — pure Python stdlib; single `.py` file or standalone `.exe`
-- 51 unit + integration tests
-
----
-
 ## Download
 
 ### Pre-built Windows EXE (recommended)
@@ -218,8 +201,6 @@ With `-amcache`:
 `user`, `iconcache_file`, `binary_path`, `raw_path`, `extension`, `db_version`,
 `sha1`, `match_type`, `size`, `first_run`, `product_name`, `notes`
 
-The CSV is written as UTF-8 BOM (`utf-8-sig`) so Excel opens it without an
-import wizard on all locales.
 
 ### Exit codes
 
@@ -252,23 +233,6 @@ REM Output: dist\IconCacheReader.exe
 Or use the helper script:
 ```cmd
 scripts\build_exe.bat
-```
-
-### Automated release builds
-
-Every time a `v*.*.*` tag is pushed to GitHub, the
-[release.yml](.github/workflows/release.yml) workflow:
-
-1. Runs the full test suite on Linux.
-2. Builds `IconCacheReader.exe` on a Windows runner using PyInstaller.
-3. Generates a SHA256 checksum.
-4. Creates a GitHub Release and attaches both files.
-
-To publish a new release:
-
-```bash
-git tag v2.1.0
-git push origin v2.1.0
 ```
 
 ---
