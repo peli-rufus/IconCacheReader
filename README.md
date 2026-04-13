@@ -8,8 +8,8 @@
 A cross-platform DFIR tool that extracts historical binary paths from Windows
 **`IconCache.db`** databases, with optional **`Amcache.hve`** SHA1 enrichment.
 
-Built for incident response workflows — runs directly from a mounted forensic
-image, produces table / JSON / CSV output, and works with no external
+Built for incident response workflows and can run directly from a mounted forensic
+image, produces table / JSON / CSV output
 dependencies.
 
 ---
