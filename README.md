@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](https://github.com/peli-rufus/IconCacheReader/releases)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 
-A cross-platform DFIR tool that extracts historical binary paths from Windows
+A DFIR tool that extracts historical binary paths from Windows
 **`IconCache.db`** databases, with optional **`Amcache.hve`** SHA1 enrichment.
 
 Built for incident response workflows and can run directly from a mounted forensic
